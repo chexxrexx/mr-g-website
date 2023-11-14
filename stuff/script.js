@@ -27,7 +27,8 @@ stopButton.addEventListener('click', function() {
   this.style.display = "none";
   startButton.style.display = "block";
   clearInterval(intervalHandle);
-    jsConfetti.addConfetti({
+  headerNames.textContent="Zoe";
+  jsConfetti.addConfetti({
     emojis: ['🤠', '⚡️', '💥', '✨', '💫', '🔥'],
  })
  jsConfetti.addConfetti({
@@ -35,7 +36,6 @@ stopButton.addEventListener('click', function() {
     '#ff0a54', '#ff477e', '#ff7096', '#ff85a1', '#fbb1bd', '#f9bec7',
   ],
 })
-  headerNames.textContent="Zoe";
   timer.innerHTML = time;
   if (showTimer === true) {
     timerWrapper.classList.add('visible');
