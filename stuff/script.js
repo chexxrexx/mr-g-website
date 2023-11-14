@@ -1,6 +1,8 @@
 "use strict";
 const jsConfetti = new JSConfetti()
 const showTimer = true;
+var audio = document.getElementById("audio");
+audio.currentTime=0;
 // Add list of names here
 const namesList = [
   'Jiesoo Kim', 'Oskar Pickering', 'Luke Plastow', 'Raine Rodgers', 'Yuna Shono', 'Mr. G', 'Aidan O\'Donnell', 'Nathan van der Deijl', 'Béranger Delorme', 'Tom Schermeier'];
@@ -28,6 +30,7 @@ stopButton.addEventListener('click', function() {
   this.style.display = "none";
   startButton.style.display = "block";
   clearInterval(intervalHandle);
+  audio.play();
   headerNames.textContent="Zoe";
   jsConfetti.addConfetti({
     emojis: ['🤠', '⚡️', '💥', '✨', '💫', '🔥'],
