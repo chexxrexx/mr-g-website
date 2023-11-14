@@ -39,6 +39,10 @@ stopButton.addEventListener('click', function() {
     '#ff0a54', '#ff477e', '#ff7096', '#ff85a1', '#fbb1bd', '#f9bec7',
   ],
 })
+  jsConfetti.addConfetti({
+  confettiRadius: 6,
+  confettiNumber: 500,
+})
   timer.innerHTML = time;
   if (showTimer === true) {
     timerWrapper.classList.add('visible');
