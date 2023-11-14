@@ -31,7 +31,6 @@ stopButton.addEventListener('click', function() {
   startButton.style.display = "block";
   clearInterval(intervalHandle);
   audio.play();
-  headerNames.textContent="Zoe";
   jsConfetti.addConfetti({
     emojis: ['🤠', '⚡️', '💥', '✨', '💫', '🔥'],
  })
