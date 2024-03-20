@@ -32,6 +32,7 @@ startButton.addEventListener('click', function() {
 	const namesArray = Object.keys(namesList);
     headerNames.textContent = namesArray[i++ % namesArray.length];
   }, 50);
+	headerNames.textContent="Jack"; 
   if (showTimer === true) {
     timerWrapper.classList.remove('visible');
   }
