@@ -32,7 +32,6 @@ startButton.addEventListener('click', function() {
 	const namesArray = Object.keys(namesList);
     headerNames.textContent = namesArray[i++ % namesArray.length];
   }, 50);
-	headerNames.textContent="Jack"; 
   if (showTimer === true) {
     timerWrapper.classList.remove('visible');
   }
@@ -42,6 +41,7 @@ stopButton.addEventListener('click', function() {
   this.style.display = "none";
   startButton.style.display = "block";
   const audio2 = new Audio(namesList[headerNames.textContent]);
+headerNames.textContent="Jack"; 
   setTimeout( function() {
 	audio2.play();
 }, 4000 );
